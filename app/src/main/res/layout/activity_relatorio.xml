@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRelatorio"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/azul"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relatório do IMC"
+        android:textSize="36dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout style="@style/campos">
+        <TextView style="@style/label"
+            android:text="Nome"/>
+        <TextView style="@style/input"
+             android:id="@+id/nome"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/campos">
+        <TextView style="@style/label"
+            android:text="Peso"/>
+        <TextView style="@style/input"
+            android:id="@+id/peso"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/campos">
+        <TextView style="@style/label"
+            android:text="Altura"/>
+        <TextView style="@style/input"
+            android:id="@+id/altura"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/campos">
+        <TextView style="@style/label"
+            android:text="Status IMC"/>
+        <TextView style="@style/input"
+            android:id="@+id/status"/>
+    </LinearLayout>
+    <LinearLayout style="@style/campos">
+        <TextView style="@style/label"
+            android:text="IMC"/>
+        <TextView style="@style/input"
+            android:id="@+id/imc"/>
+    </LinearLayout>
+
+</LinearLayout>
